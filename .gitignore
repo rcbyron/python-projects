@@ -1,9 +1,3 @@
+.DS_Store
 *.pyc
 *.log
-*.json
-*.jpg
-*.png
-*.gif
-.pydevproject
-.project
-README.rst
