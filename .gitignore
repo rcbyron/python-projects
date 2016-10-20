@@ -1,0 +1,9 @@
+*.pyc
+*.log
+*.json
+*.jpg
+*.png
+*.gif
+.pydevproject
+.project
+README.rst
