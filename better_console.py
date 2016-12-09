@@ -1,6 +1,4 @@
-"""
-Better Console
-"""
+""" A demo of better console output using regex """
 import re
 import time
 
@@ -14,6 +12,7 @@ pat = re.compile(REGEX_OUT)
 orig = time.time()
 
 p = Popen(["python", "company_name_maker.py"], stdout=PIPE)
+
 # Grab stdout line by line as it becomes available.
 # This will loop until p terminates.
 print("Listening to process...\n")

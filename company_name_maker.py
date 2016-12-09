@@ -1,3 +1,4 @@
+""" Combines two random words to make a company name """
 import random as r
 
 words = []

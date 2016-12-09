@@ -78,6 +78,7 @@ general = {
 
 
 def init():
+    """ Initialize and compile regex patterns """
     global num_subs, general
     for k, v in general.items():
         general[k] = re.compile(v, re.IGNORECASE)
@@ -86,13 +87,14 @@ def init():
 
 
 def fix(tweet):
+    """ Fix the tweet to be smaller """
     old_len = len(tweet)
     for k, v in num_subs.items():
         tweet = v.sub(k, tweet)
 
     for k, v in general.items():
         tweet = v.sub(k, tweet)
-    return (tweet, old_len-len(tweet))
+    return tweet, old_len-len(tweet)
 
 init()
 while True:
