@@ -1,3 +1,5 @@
+private-python
+private-python/*
 .DS_Store
 .idea
 *.pyc
